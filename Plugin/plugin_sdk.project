@@ -44,6 +44,15 @@
  }]]]>
     </Plugin>
   </Plugins>
+  <Reconciliation>
+    <Regexes/>
+    <Excludepaths/>
+    <Ignorefiles/>
+    <Extensions>
+      <![CDATA[*.cpp;*.c;*.h;*.hpp;*.xrc;*.wxcp;*.fbp]]>
+    </Extensions>
+    <Topleveldir>/src/codelite/Plugin</Topleveldir>
+  </Reconciliation>
   <VirtualDirectory Name="src">
     <File Name="async_executable_cmd.cpp"/>
     <File Name="build_config.cpp"/>
@@ -206,6 +215,10 @@
     <File Name="clStatusBarMessage.cpp"/>
     <File Name="cProjectDependecySorter.h"/>
     <File Name="cProjectDependecySorter.cpp"/>
+    <File Name="clProfileHandler.h"/>
+    <File Name="clProfileHandler.cpp"/>
+    <File Name="clGotoAnythingManager.h"/>
+    <File Name="clGotoAnythingManager.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="Builders">
     <File Name="builder.h"/>
@@ -338,6 +351,8 @@
       <File Name="clBitmapOverlayCtrl.cpp"/>
       <File Name="clTreeCtrlColourHelper.h"/>
       <File Name="clTreeCtrlColourHelper.cpp"/>
+      <File Name="clEditorBar.h"/>
+      <File Name="clEditorBar.cpp"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Dialogs">
       <File Name="nameanddescdlg.h"/>
@@ -367,8 +382,15 @@
       <File Name="clSelectSymbolDialog.cpp"/>
       <File Name="nameanddescdlg.wxcp"/>
       <File Name="envvar_table_dlg.wxcp"/>
+      <File Name="GotoAnythingDlg.cpp"/>
+      <File Name="GotoAnythingDlg.h"/>
     </VirtualDirectory>
     <VirtualDirectory Name="Notebook">
+      <File Name="clTab.h"/>
+      <File Name="clTabHistory.cpp"/>
+      <File Name="clTabHistory.h"/>
+      <File Name="clAuiNotebook.cpp"/>
+      <File Name="clAuiNotebook.h"/>
       <File Name="drawingutils.cpp"/>
       <File Name="drawingutils.h"/>
       <File Name="dockablepane.cpp"/>
@@ -479,6 +501,7 @@
       <File Name="nameanddescdlg_plugin_bitmaps.cpp"/>
       <File Name="MacrosBaseDlg_plugin_bitmaps.cpp"/>
       <File Name="EnvironmentVariablesDlgBaseBitmaps.cpp"/>
+      <File Name="GotoAnythingBaseUI_plugin_bitmaps.cpp"/>
     </VirtualDirectory>
     <VirtualDirectory Name="base">
       <File Name="VirtualDirectorySelectorBase.h"/>
@@ -501,6 +524,8 @@
       <File Name="clSelectSymbolDialogBase.cpp"/>
       <File Name="EnvironmentVariablesDlgBase.h"/>
       <File Name="EnvironmentVariablesDlgBase.cpp"/>
+      <File Name="GotoAnythingBaseUI.h"/>
+      <File Name="GotoAnythingBaseUI.cpp"/>
     </VirtualDirectory>
     <File Name="openresourcedialogbase.wxcp"/>
     <File Name="plugin_general_wxcp.wxcp"/>
@@ -509,8 +534,11 @@
     <File Name="WSImporterDlgs.wxcp"/>
     <File Name="clSelectSymbolDialogBase.wxcp"/>
     <File Name="MacrosBaseDlg.wxcp"/>
+    <File Name="GotoAnythingBaseUI.wxcp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="sftp_ui">
+    <File Name="SFTPSessionInfo.cpp"/>
+    <File Name="SFTPSessionInfo.h"/>
     <File Name="AddSSHAcountDlg.cpp"/>
     <File Name="AddSSHAcountDlg.h"/>
     <File Name="sftp_ui.wxcp"/>
@@ -530,6 +558,8 @@
     <File Name="SSHTerminal.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="Diff">
+    <File Name="clDiffFrame.cpp"/>
+    <File Name="clDiffFrame.h"/>
     <VirtualDirectory Name="dtl">
       <File Name="dtl/Diff.hpp"/>
       <File Name="dtl/Diff3.hpp"/>
